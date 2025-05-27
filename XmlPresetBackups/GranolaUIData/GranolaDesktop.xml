@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptPanel" id="background" x="0.0" y="0.0" width="400.0"
+             height="400.0" bgColour="4294967295"/>
+  <Component type="ScriptPanel" id="crop" x="0.0" y="65.0" width="400.0" height="100.0"
+             bgColour="16777215" textColour="16777215" itemColour2="0" itemColour="0">
+    <Component type="ScriptFloatingTile" id="osc" x="0.0" y="0.0" ContentType="AudioAnalyser"
+               bgColour="16777215" itemColour="4294967295" itemColour2="4294967295"
+               textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;osc&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="400.0" height="210.0" parentComponent="crop"/>
+  </Component>
+  <Component type="ScriptSlider" id="position" x="42.0" y="238.0" itemColour="4289360598"
+             bgColour="4289360598" itemColour2="4280624164" width="40.0" height="40.0"
+             mouseSensitivity="0.6000000238418579" min="10.0" max="1000.0"
+             processorId="grains" parameterId="grainPos" stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="size" x="122.0" y="238.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" min="10.0" max="1000.0" processorId="grains"
+             parameterId="grainSize" stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="interval" x="199.0" y="238.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" min="10.0" max="1000.0" processorId="grains"
+             parameterId="interval" stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="pitch" x="76.0" y="312.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" min="-12.0" max="12.0" processorId="grains"
+             parameterId="pitch" stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="width" x="170.0" y="312.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" max="100.0" processorId="grains" parameterId="width"
+             stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="mix" x="315.0" y="238.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" max="100.0" processorId="grains" parameterId="mix"
+             stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptSlider" id="gain" x="315.0" y="312.0" width="40.0"
+             height="40.0" mouseSensitivity="0.6000000238418579" itemColour2="4280624164"
+             itemColour="4289360598" min="-36.0" max="12.0" processorId="grains"
+             parameterId="gain" stepSize="1.0" isPluginParameter="1"/>
+  <Component type="ScriptLabel" id="positionLabel" x="27.0" y="281.0" text="position"
+             fontName="Inter" editable="0" itemColour2="4280624164" textColour="4280624164"
+             width="70.0" height="15.0" fontSize="12.0"/>
+  <Component type="ScriptLabel" id="sizeLabel" x="106.0" y="281.0" text="size"
+             fontName="Inter" fontSize="12.0" editable="0" textColour="4280624164"
+             width="70.0" height="15.0"/>
+  <Component type="ScriptLabel" id="intervalLabel" x="184.0" y="281.0" text="interval"
+             fontName="Inter" fontSize="12.0" editable="0" textColour="4280624164"
+             height="15.0" width="70.0"/>
+  <Component type="ScriptLabel" id="pitchLabel" x="60.0" y="355.0" fontName="Inter"
+             fontSize="12.0" editable="0" textColour="4280624164" height="15.0"
+             text="pitch" width="70.0"/>
+  <Component type="ScriptLabel" id="widthLabel" x="155.0" y="355.0" fontName="Inter"
+             fontSize="12.0" editable="0" textColour="4280624164" height="15.0"
+             text="width" width="70.0"/>
+  <Component type="ScriptLabel" id="mixLabel" x="299.0" y="281.0" fontName="Inter"
+             fontSize="12.0" editable="0" textColour="4280624164" height="15.0"
+             text="mix" width="70.0"/>
+  <Component type="ScriptLabel" id="gainLabel" x="299.0" y="355.0" fontName="Inter"
+             fontSize="12.0" editable="0" textColour="4280624164" height="15.0"
+             text="gain" width="70.0"/>
+</ContentProperties>
